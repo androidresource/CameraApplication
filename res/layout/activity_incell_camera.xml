@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ningfeifei="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 显示预览图形 -->
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 切换前置后置摄像头 -->
+
+    <com.ningfeifei.cameraapplication.GSensitiveView
+        android:id="@+id/take_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_select"
+        android:visibility="gone"
+        ningfeifei:src_pic="@drawable/take" />
+
+    <!-- 闪光灯 -->
+
+    <com.ningfeifei.cameraapplication.GSensitiveView
+        android:id="@+id/take_flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_select"
+        android:visibility="gone" />
+
+    <!-- 返回 -->
+    
+    <com.ningfeifei.cameraapplication.GSensitiveView
+        android:id="@+id/take_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_select" />
+
+     <!-- 拍照 -->
+    
+    <com.ningfeifei.cameraapplication.GSensitiveView
+        android:id="@+id/snap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_select" />
+
+    <!-- 拍照后保存 -->
+    
+    <com.ningfeifei.cameraapplication.GSensitiveView
+        android:id="@+id/take_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_select"
+        android:visibility="gone" />
+
+    <!-- 拍照后取消保存 -->
+    
+    <com.ningfeifei.cameraapplication.GSensitiveView
+        android:id="@+id/take_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_select"
+        android:visibility="gone" />
+
+</RelativeLayout>

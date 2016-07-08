@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GSensitiveView">
+    	<attr name="src_pic" format="reference"/><!--  选中的src图片属性-->
+	</declare-styleable>
+</resources>
