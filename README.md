@@ -5,6 +5,7 @@
       uri(使用data.getData())获取,若needSave为false，本功能不为用户保存照片,只返回图片的二进制数据dataByte。
   
 启动示例：
+	```
 	Intent intent = new Intent();
 	Bundle bundle = new Bundle();
 	bundle.putBoolean("needSave", true);
@@ -29,6 +30,7 @@
 		}
 
 	}
+	```
 	
 3、CameraUtils类中提供了图片路径和Uri互转的方法
    CameraUtils.uri2filePath(Uri uri, Activity activity)
